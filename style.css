@@ -1,3 +1,4 @@
+/* General Page Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,23 +14,6 @@ header {
     text-align: center;
 }
 
-/* Navigation Menu */
-nav {
-    text-align: center;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-}
-
-nav a:hover {
-    background: #555;
-}
-
 /* Layout */
 .container {
     display: flex;
@@ -42,6 +26,9 @@ nav a:hover {
     background: white;
     padding: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .sidebar ul {
@@ -65,8 +52,14 @@ nav a:hover {
 
 /* Main Content */
 .content {
-    flex-grow: 1;
-    background: white;
+    margin-left: 280px;
     padding: 20px;
+    background: white;
+    width: calc(100% - 300px);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
 }
