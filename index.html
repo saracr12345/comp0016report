@@ -3,47 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Project Homepage</title>
-  <!-- Link to external CSS -->
+  <title>Home | My Project</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header Section -->
   <header>
-    <h1>Welcome to My Website</h1>
-    <!-- Navigation Bar -->
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img src="logo.png" alt="Project Logo">
+          <span>My Project</span>
+        </a>
+      </div>
+      <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="navbar-links">
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="requirements.html">Requirements</a></li>
-        <!-- Add more links as needed -->
+        <li><a href="hci.html">HCI</a></li>
+        <li><a href="research.html">Research</a></li>
       </ul>
     </nav>
   </header>
-
-  <!-- Main Content -->
-  <main>
-    <section id="intro">
-      <h2>Introduction</h2>
-      <p>This is a sample homepage for my project. Here you can introduce the site, explain its purpose, and guide users to other parts of the site.</p>
-    </section>
-
-    <section id="features">
-      <h2>Features</h2>
-      <ul>
-        <li>Responsive Design</li>
-        <li>Interactive Elements</li>
-        <li>Clean Layout</li>
-      </ul>
+  
+  <main class="homepage">
+    <section class="intro">
+      <h1>Welcome to My Project</h1>
+      <p>This project is designed to [insert project purpose].</p>
+      <a href="requirements.html" class="button">View Requirements</a>
     </section>
   </main>
-
-  <!-- Footer Section -->
+  
   <footer>
-    <p>&copy; 2025 My Name. All rights reserved.</p>
+    <p>&copy; 2025 My Project</p>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="requirements.html">Requirements</a>
+      <a href="hci.html">HCI</a>
+      <a href="research.html">Research</a>
+    </nav>
   </footer>
-
-  <!-- Link to external JavaScript file -->
+  
   <script src="script.js"></script>
 </body>
 </html>
